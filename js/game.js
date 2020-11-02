@@ -40,18 +40,31 @@ let game ={
             realWidth: window.innerWidth,
             realHeight: window.innerHeight
         };
+
+        if(data.realWidth/data.realHeight > data.maxWidth/data.maxHeight){
+            this.fitWidth(data);
+        }else {
+            this.fitWidth(data);
+        }
         this.fitHeight(data);
 
         this.canvas.width =  this.width;
         this.canvas.height =  this.height;
 
     },
+    fitWidth(data){
+        this.width = data.maxWidth;
+        this.height = Math.round(this.height *data.realHeight/data.realWidth);
+        this.height =Math.min(this.height, data.maxHeight);
+        this.height =Math.max(this.height, data.maxHeight);
+        this.width = Math.round(this.height*data.realWidth/data.realHeight);
+        this.canvas.style.height = "100%";
+    },
     fitHeight(data){
-        this.width = Math.floor(data.realWidth * data.maxHeight / data.realHeight);
+        this.width = Math.round(data.realWidth * data.maxHeight / data.realHeight);
         this.width = Math.min(this.width, data.maxWidth);
         this.width = Math.max(this.width, data.minWidth);
-        // this.height = data.maxHeight;
-        this.height = Math.floor(this.width*data.realHeight/data.realWidth);
+        this.height = Math.round(this.width*data.realHeight/data.realWidth);
         this.canvas.style.height = "100%";
     },
     preload(callback){
