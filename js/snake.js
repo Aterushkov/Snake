@@ -13,4 +13,18 @@ game.snake ={
             this.game.ctx.drawImage(this.game.sprites.body,cell.x,cell.y);
         });
     },
+    move(){
+        let cell = this.getnexCell();
+        if(cell){
+            this.cells.unshift(cell);
+            this.cells.pop();
+        }
+    },
+    getnexCell(){
+        let head = this.cells[0];
+        let row = head.row-1;
+        let col = head.col;
+        return this.game.board.getCell(row,col);
+
+    }
 };
