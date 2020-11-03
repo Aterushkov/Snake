@@ -85,6 +85,9 @@ let game ={
     create(){
         this.board.create();
         this.snake.create();
+        window.addEventListener("keydown", e =>{
+            this.snake.start(e.keyCode);
+        });
     },
     render(){
         window.requestAnimationFrame(()=>{
