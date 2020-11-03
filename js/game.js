@@ -152,12 +152,22 @@ let game ={
         alert("Игра завершена");
         window.location.reload();
     },
+    win(){
+        this.sounds.food.play();
+        clearInterval(this.gameIntervarl);
+        clearInterval(this.bombIntervarl);
+        alert("Игра завершена");
+        window.location.reload();
+    },
     onSnakeStart(){
         this.sounds.theme.loop = true;
         this.sounds.theme.play();
     },
     onSnakeEat(){
+        ++this.score;
+        this.board.createFood();
         this.sounds.food.play();
+        console.log(this.score);
     }
 };
 game.start();

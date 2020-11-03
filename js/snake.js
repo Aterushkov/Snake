@@ -81,16 +81,16 @@ game.snake ={
         }
         let cell = this.getNexCell();
 
-        if(!cell || this.hasCell(cell) || this.game.board.isBomdCell(cell)){
+        if(!cell || this.hasCell(cell) || this.game.board.isBomdCell(cell) ){
             this.game.stop();
-        }else{
+        }else if(this.game.score === 2){
+            this.game.win();
+        } else{
             this.cells.unshift(cell);
             if(!this.game.board.isFoodCell(cell)){
                 this.cells.pop();
             }else{
                 this.game.onSnakeEat();
-                this.game.board.createFood();
-                ++this.game.score;
             }
         }
     },
