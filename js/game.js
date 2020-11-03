@@ -20,6 +20,7 @@ let game ={
         cell:null,
         body:null,
         food:null,
+        head:null,
     },
     random(min,max){
         return Math.floor(Math.random() * (max+1-min)+min);
