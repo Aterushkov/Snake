@@ -7,18 +7,22 @@ game.snake ={
         up:{
             row : -1,
             col : 0,
+            angle:180
         },
         down:{
             row : 1,
             col : 0,
+            angle:0
         },
         left:{
             row : 0,
             col : -1,
+            angle:90
         },
         right:{
             row : 0,
             col : 1,
+            angle:270
         }
     },
     create(){
@@ -31,7 +35,15 @@ game.snake ={
     },
     renderHead(){
         let head = this.cells[0];
-        this.game.ctx.drawImage(this.game.sprites.head,head.x,head.y);
+        let halfSize = this.game.sprites.head.width/2;
+
+        this.game.ctx.save();
+        this.game.ctx.translate(head.x,head.y);
+        this.game.ctx.translate(halfSize,halfSize);
+        let degree = this.direction.angle;
+        this.game.ctx.rotate(degree * Math.PI / 180);
+        this.game.ctx.drawImage(this.game.sprites.head,-halfSize,-halfSize);
+        this.game.ctx.restore();
 
     },
     renderBody(){
