@@ -83,7 +83,7 @@ game.snake ={
 
         if(!cell || this.hasCell(cell) || this.game.board.isBomdCell(cell) ){
             this.game.stop();
-        }else if(this.game.score === 2){
+        }else if(this.game.score === this.game.winScore){
             this.game.win();
         } else{
             this.cells.unshift(cell);

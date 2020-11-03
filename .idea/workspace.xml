@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c783f29e-c027-43f9-80ba-39fdac9fcf2d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/game.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/snake.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/snake.js" afterDir="false" />
     </list>
@@ -55,7 +54,7 @@
       <workItem from="1604310930890" duration="1852000" />
       <workItem from="1604324560450" duration="3237000" />
       <workItem from="1604328348904" duration="753000" />
-      <workItem from="1604417287228" duration="12992000" />
+      <workItem from="1604417287228" duration="13362000" />
     </task>
     <task id="LOCAL-00001" summary="30.10/1">
       <created>1604053806528</created>
@@ -197,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604441429343</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="finish game">
+      <created>1604442477284</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1604442477284</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,13 +228,14 @@
     <MESSAGE value="04.11/1" />
     <MESSAGE value="04.11/2" />
     <MESSAGE value="04.11/3" />
-    <option name="LAST_COMMIT_MESSAGE" value="04.11/3" />
+    <MESSAGE value="finish game" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish game" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="583" y="88" key="CommitChangelistDialog2" timestamp="1604441428187">
+    <state x="583" y="88" key="CommitChangelistDialog2" timestamp="1604442476180">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="583" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604441428186" />
+    <state x="583" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604442476180" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1604053765453">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -237,10 +244,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="838" y="417" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604053841340" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1604441434699">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1604442483185">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604441434699" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604442483185" />
     <state x="1096" y="244" key="run.anything.popup" timestamp="1604440213940">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

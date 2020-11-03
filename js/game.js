@@ -29,6 +29,7 @@ let game ={
         theme:null,
     },
     score:0,
+    winScore:10,
     random(min,max){
         return Math.floor(Math.random() * (max+1-min)+min);
     },
