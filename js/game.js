@@ -111,14 +111,20 @@ let game ={
     },
     run(){
         this.create();
-        setInterval(()=>{
+        this.gameIntervarl = setInterval(()=>{
             this.update();
         },150);
-        setInterval(()=>{
+        this.bombIntervarl = setInterval(()=>{
             if(this.snake.moving){
                 this.board.createBomb();
             }
         },3000);
+    },
+    stop(){
+        clearInterval(this.gameIntervarl);
+        clearInterval(this.bombIntervarl);
+        alert("Игра завершена");
+        window.location.reload();
     }
 };
 game.start();

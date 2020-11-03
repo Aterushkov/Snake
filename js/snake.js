@@ -76,8 +76,11 @@ game.snake ={
         if(!this.moving){
             return;
         }
-        let cell = this.getnexCell();
-        if(cell){
+        let cell = this.getNexCell();
+
+        if(!cell || this.hasCell(cell) || this.game.board.isBomdCell(cell)){
+            this.game.stop();
+        }else{
             this.cells.unshift(cell);
             if(!this.game.board.isFoodCell(cell)){
                 this.cells.pop();
@@ -89,7 +92,7 @@ game.snake ={
     hasCell(cell){
        return this.cells.find(part => part === cell);
     },
-    getnexCell(){
+    getNexCell(){
         let head = this.cells[0];
         let row = head.row + this.direction.row;
         let col = head.col + this.direction.col;

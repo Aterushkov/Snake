@@ -28,7 +28,7 @@ game.board ={
         return this.cells.find(cell => cell.row === row && cell.col === col);
     },
     getRenderAvailableCell(){
-        let pool = this.cells.filter(cell=>!cell.hasFood && !cell.hasBomb && !this.game.snake.hasCell(cell));
+        let pool = this.cells.filter(cell=>!cell.type && !this.game.snake.hasCell(cell));
         let index = game.random(0, pool.length - 1);
         return pool[index];
     },
