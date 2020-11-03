@@ -138,10 +138,18 @@ let game ={
         },3000);
     },
     stop(){
+        this.sounds.bomb.play();
         clearInterval(this.gameIntervarl);
         clearInterval(this.bombIntervarl);
         alert("Игра завершена");
         window.location.reload();
+    },
+    onSnakeStart(){
+        this.sounds.theme.loop = true;
+        this.sounds.theme.play();
+    },
+    onSnakeEat(){
+        this.sounds.food.play();
     }
 };
 game.start();
