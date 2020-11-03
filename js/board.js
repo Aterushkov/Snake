@@ -27,8 +27,13 @@ game.board ={
     getCell(row,col){
         return this.cells.find(cell => cell.row === row && cell.col === col);
     },
+    getRenderAvailableCell(){
+        let pool = this.cells.filter(cell=>!this.game.snake.hasCell(cell));
+        let index = game.random(0, pool.length - 1);
+        return pool[index];
+    },
     createFood(){
-        let cell = this.cells[0];
+        let cell = this.getRenderAvailableCell();
         cell.hasFood = true;
     },
     render(){

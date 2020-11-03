@@ -61,11 +61,11 @@ game.snake ={
             this.cells.pop();
         }
     },
+    hasCell(cell){
+       return this.cells.find(part => part === cell);
+    },
     getnexCell(){
         let head = this.cells[0];
-
-
-
         let row = head.row + this.direction.row;
         let col = head.col + this.direction.col;
         return this.game.board.getCell(row,col);
