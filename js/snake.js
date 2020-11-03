@@ -90,6 +90,7 @@ game.snake ={
             }else{
                 this.game.onSnakeEat();
                 this.game.board.createFood();
+                ++this.game.score;
             }
         }
     },

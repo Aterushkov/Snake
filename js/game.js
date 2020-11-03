@@ -28,6 +28,7 @@ let game ={
         food:null,
         theme:null,
     },
+    score:0,
     random(min,max){
         return Math.floor(Math.random() * (max+1-min)+min);
     },
@@ -41,6 +42,11 @@ let game ={
         this.canvas = document.getElementById("mycanvas");
         this.ctx =  this.canvas.getContext("2d");
         this.initDimensions();
+        this.setTextFont();
+    },
+    setTextFont(){
+        this.ctx.font = "20px Arial";
+        this.ctx.fillStyle = "#FFFFFF"
     },
     initDimensions(){
         let data ={
@@ -120,6 +126,8 @@ let game ={
             this.ctx.drawImage(this.sprites.background,(this.width-this.sprites.background.width)/2 ,(this.height-this.sprites.background.height)/2);
             this.board.render();
             this.snake.render();
+
+            this.ctx.fillText("Яблок собрано: " + this.score, 30,30);
         });
     },
     update(){
