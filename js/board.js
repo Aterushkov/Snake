@@ -33,8 +33,15 @@ game.board ={
         return pool[index];
     },
     createFood(){
-        let cell = this.getRenderAvailableCell();
+        let cell = this.cells.find(cell => cell.hasFood);
+        if(cell){
+            cell.hasFood = false;
+        }
+        cell = this.getRenderAvailableCell();
         cell.hasFood = true;
+    },
+    isFoodCell(cell){
+       return cell.hasFood;
     },
     render(){
        this.cells.forEach(cell =>{
