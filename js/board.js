@@ -27,9 +27,17 @@ game.board ={
     getCell(row,col){
         return this.cells.find(cell => cell.row === row && cell.col === col);
     },
+    createFood(){
+        let cell = this.cells[0];
+        cell.hasFood = true;
+    },
     render(){
        this.cells.forEach(cell =>{
            this.game.ctx.drawImage(this.game.sprites.cell,cell.x,cell.y);
+           if(cell.hasFood){
+               this.game.ctx.drawImage(this.game.sprites.food,cell.x,cell.y);
+
+           }
        })
     },
 };
