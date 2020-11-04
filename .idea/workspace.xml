@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c783f29e-c027-43f9-80ba-39fdac9fcf2d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/js/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/game.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/snake.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/snake.js" afterDir="false" />
-    </list>
+    <list default="true" id="c783f29e-c027-43f9-80ba-39fdac9fcf2d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,7 +51,7 @@
       <workItem from="1604310930890" duration="1852000" />
       <workItem from="1604324560450" duration="3237000" />
       <workItem from="1604328348904" duration="753000" />
-      <workItem from="1604417287228" duration="13362000" />
+      <workItem from="1604417287228" duration="14003000" />
     </task>
     <task id="LOCAL-00001" summary="30.10/1">
       <created>1604053806528</created>
@@ -203,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604442477284</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="finish game/2">
+      <created>1604442851476</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1604442851476</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,13 +233,14 @@
     <MESSAGE value="04.11/2" />
     <MESSAGE value="04.11/3" />
     <MESSAGE value="finish game" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish game" />
+    <MESSAGE value="finish game/2" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish game/2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="583" y="88" key="CommitChangelistDialog2" timestamp="1604442476180">
+    <state x="583" y="88" key="CommitChangelistDialog2" timestamp="1604442850457">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="583" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604442476180" />
+    <state x="583" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604442850457" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1604053765453">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -244,10 +249,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="838" y="417" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604053841340" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1604442483185">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1604442859547">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604442483185" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604442859547" />
     <state x="1096" y="244" key="run.anything.popup" timestamp="1604440213940">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

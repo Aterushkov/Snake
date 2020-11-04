@@ -150,14 +150,14 @@ let game ={
         this.sounds.bomb.play();
         clearInterval(this.gameIntervarl);
         clearInterval(this.bombIntervarl);
-        alert("Игра завершена");
+        alert("Вы победили. Отправьте Ваш уникальный код нам на почту и получите приз! Ваш уникальный код: " + Math.random().toString(36).slice(-8));
         window.location.reload();
     },
     win(){
         this.sounds.food.play();
         clearInterval(this.gameIntervarl);
         clearInterval(this.bombIntervarl);
-        alert("Игра завершена");
+        alert("Вы не выйграли! Отправьте Ваш уникальный код нам на почту и получите утешительный приз! Ваш уникальный код: " + Math.random().toString(36).slice(-8));
         window.location.reload();
     },
     onSnakeStart(){
