@@ -119,6 +119,7 @@ let game ={
         this.board.createBomb();
         window.addEventListener("keydown", e =>{
             this.snake.start(e.keyCode);
+            e.preventDefault();
         });
     },
     render(){
